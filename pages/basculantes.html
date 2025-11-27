@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROL DE COLADAS H. BASCULANTE</title>
+    <link rel="stylesheet" href="../css/basculantes.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- ENCABEZADO -->
+        <div class="card app-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <img src="../img/Hidrostal_Logo.png" alt="Hidrostal Logo">
+                    </div>
+                    <h1 class="title">CONTROL DE COLADAS H. BASCULANTE</h1>
+                </div>
+                <div class="header-right-buttons">
+                    <div class="header-fields-group">
+                        <div class="header-field"><label>CÓDIGO:</label><input type="text" class="input-codigo" value="FHO-FO-001" readonly></div>
+                        <div class="header-field"><label>VERSIÓN:</label><input type="text" class="input-version" value="05" readonly></div>
+                        <div class="header-field"><label>FECHA:</label><input type="date" class="input-fecha"></div>
+                    </div>
+                    <div class="header-buttons-group">
+                        <button class="btn-menu">Guardar</button>
+                        <a href="menuDocs.html" class="btn-menu">Volver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DATOS GENERALES -->
+        <div class="card">
+            <h2 class="section-title">DATOS GENERALES</h2>
+            <div class="grid grid-12">
+                <div class="col-3 field"><label>Colada</label><input type="text"></div>
+                <div class="col-3 field"><label>Metal</label><input type="text"></div>
+                <div class="col-3 field"><label>Arranque</label><input type="text"></div>
+                <div class="col-3 field"><label>Temperatura Sangrado</label><input type="number"></div>
+                <div class="col-6 field"><label>Nº WO</label><input type="text"></div>
+                <div class="col-6 field"><label>Nº Artículo</label><input type="text"></div>
+            </div>
+        </div>
+
+        <!-- 1. COMPONENTES DE LA CARGA + ADICIONES -->
+        <div class="grid grid-12">
+
+            <!-- COMPONENTES DE LA CARGA -->
+            <div class="col-7 card">
+                <h2 class="section-title">1. COMPONENTES DE LA CARGA</h2>
+                <div class="table-wrapper">
+
+                    <!-- Encabezado principal combinado -->
+                    <div class="table-header carga-header-main">
+                        <div style="grid-column: 1 / 4;">COMPONENTES</div>
+                        <div style="grid-column: 4 / 6; text-align:center;">HORNO</div>
+                    </div>
+
+                    <!-- Sub-encabezado -->
+                    <div class="table-header carga-header-sub">
+                        <div></div>
+                        <div>CÓDIGO</div>
+                        <div>NOMBRE</div>
+                        <div>Kg</div>
+                        <div>%</div>
+                    </div>
+
+                    <!-- Filas editables -->
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">RETORNO</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">LINGOTE</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">LIGA</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">LHC02002</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">LHC5001</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text" value="COBRE"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">LHZ1001</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text" value="ZINC"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">LHE6001</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text" value="ESTAÑO"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row carga-row">
+                        <div class="table-cell-label">LHB5001</div>
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text" value="BISMUTO"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+
+                    <!-- CARGA FRÍA -->
+                    <div class="table-row carga-total">
+                        <div class="table-cell-label total-label">CARGA FRÍA</div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1" readonly style="font-weight:700;"></div>
+                        <div class="table-cell"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADICIONES -->
+            <div class="col-5 card">
+                <h2 class="section-title">ADICIONES</h2>
+                <div class="table-wrapper">
+
+                    <!-- Encabezado principal -->
+                    <div class="table-header adiciones-header-main">
+                        <div style="grid-column: 1 / 4;">ADICIONES</div>
+                        <div style="grid-column: 4 / 6; text-align:center;">CALLANA</div>
+                    </div>
+
+                    <!-- Sub-encabezado -->
+                    <div class="table-header adiciones-header-sub">
+                        <div>CÓDIGO</div>
+                        <div>NOMBRE</div>
+                        <div></div>
+                        <div>Kg</div>
+                        <div>%</div>
+                    </div>
+
+                    <!-- Filas editables -->
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text" value="LIZ0092"></div>
+                        <div class="table-cell"><input type="text" value="LOGAS"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text" value="LIT4002"></div>
+                        <div class="table-cell"><input type="text" value="TUBOS E5"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text" value="LHZ1001"></div>
+                        <div class="table-cell"><input type="text" value="ZINC"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text" value="LHE6001"></div>
+                        <div class="table-cell"><input type="text" value="ESTAÑO"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text" value="LHB5001"></div>
+                        <div class="table-cell"><input type="text" value="BISMUTO"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text" value="LHO2001"></div>
+                        <div class="table-cell"><input type="text" value="COBRE-FOSFOROSO"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text" value="LIZ0454"></div>
+                        <div class="table-cell"><input type="text" value="FLUX 503"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                    <div class="table-row adiciones-row">
+                        <div class="table-cell"><input type="text"></div>
+                        <div class="table-cell"><input type="text" value="OTROS"></div>
+                        <div class="table-cell"></div>
+                        <div class="table-cell"><input type="number" step="0.1"></div>
+                        <div class="table-cell"><input type="number" step="0.01"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resto del formulario (puedes seguir agregando las demás secciones igual que el eléctrico) -->
+        <!-- Aquí irían: Análisis Químico, Temperatura, Tiempos, Observaciones, Firmas... -->
+
+    </div>
+</body>
+</html>
